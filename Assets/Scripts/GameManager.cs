@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
-        myTurn = true;
+        myTurn = false;
         numOfAttack = 0;
     }
 
