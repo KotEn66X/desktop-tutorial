@@ -7,7 +7,12 @@ public class PlayerControl : MonoBehaviour
     int btn = 0;
     int maxBtn = 3;
     int[] x = new int[2] {1, 0};
-    public GameObject Fight; public GameObject Act; public GameObject Item; public GameObject Mercy;
+    
+    public GameObject Fight; 
+    public GameObject Act; 
+    public GameObject Item; 
+    public GameObject Mercy;
+    
     public Sprite inactiveFight;
     public Sprite activeFight;
     public Sprite inactiveAct;
@@ -16,6 +21,7 @@ public class PlayerControl : MonoBehaviour
     public Sprite activeItem;
     public Sprite inactiveMercy;
     public Sprite activeMercy;
+    
     private SpriteRenderer SpriteRenderer;
     public AudioClip switchsound;
     public AudioSource audios;
@@ -78,6 +84,7 @@ public class PlayerControl : MonoBehaviour
             }
         }
     }
+    
     void SwitchBtn(GameObject on, GameObject off1, GameObject off2, GameObject off3, Sprite onS, Sprite offS1, Sprite offS2, Sprite offS3)
     {
         on.GetComponent<SpriteRenderer>().sprite = onS;
